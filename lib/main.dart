@@ -30,20 +30,27 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  int _counter2 = 0;
 
   void _incrementCounter() {
     setState(() {
       _counter++;
+      _counter2++;
     });
   }
 
   @override
   Widget build(BuildContext context) {
+    // UIの大枠となるwidget
+    // https://api.flutter.dev/flutter/material/Scaffold-class.html
+    // https://cz-cdn.shoeisha.jp/static/images/article/13329/13329_003.png
     return Scaffold(
+      // https://api.flutter.dev/flutter/material/AppBar-class.html
       appBar: AppBar(
         title: Text(widget.title),
       ),
       body: Center(
+        // https://api.flutter.dev/flutter/widgets/Column-class.html
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -52,6 +59,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
+              style: Theme.of(context).textTheme.headline4,
+            ),
+            Text(
+              '$_counter2',
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
