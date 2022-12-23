@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_handson/fizzbuzz_text.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,12 +31,10 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-  int _counter2 = 0;
 
   void _incrementCounter() {
     setState(() {
       _counter++;
-      _counter2++;
     });
   }
 
@@ -61,9 +60,8 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
-            Text(
-              '$_counter2',
-              style: Theme.of(context).textTheme.headline4,
+            FizzBuzzText(
+              number: _counter,
             ),
           ],
         ),

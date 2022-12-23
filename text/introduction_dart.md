@@ -105,7 +105,7 @@ Dartでは非同期処理をasync/awaitで簡潔に記述することができ�
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-/// 
+/// 郵便番号から住所を取得する
 Future<String> getAddress(String zipcode) async {
   final url = Uri.parse('https://zipcloud.ibsnet.co.jp/api/search?zipcode=$zipcode');
   var response = await http.get(url);
@@ -178,3 +178,6 @@ https://dart.dev/guides/language/effective-dart/style
 /// classes, and their members. Tools like IDEs and dartdoc treat
 /// doc comments specially.
 ```
+
+
+privateはClass、Method、変数に効いてた
