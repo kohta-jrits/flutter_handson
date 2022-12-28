@@ -12,8 +12,9 @@
  - pubspec.yaml: アプリバージョンや依存関係などを記述
 
 ## セットアップ
-0. VSCodeをインストール
-   - Extensions DartとFlutterを入れる。
+0. [VSCode](https://code.visualstudio.com/download)をインストール
+  <img src="./assets/VSCode-download.png"  title="[VSCode](https://code.visualstudio.com/download/)">
+   - オプション：Extensions（拡張機能） に「Dart」と「Flutter」を入れておくと便利です。
 1. [公式サイト](https://flutter.dev/)より「Get Started」を選択
    <img src="./assets/公式トップ.jpg"  title="[Flutter](https://flutter.dev/)">
 2. インストールする先のOSを選択
