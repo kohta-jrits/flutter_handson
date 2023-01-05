@@ -15,10 +15,12 @@ class FizzBuzzText extends StatelessWidget {
   //   );
   // }
 
+  
   @override
   Widget build(BuildContext context) {
     return Text(
-      result,
+      "HOGEHOGE",
+      // result,
       style: Theme.of(context).textTheme.headline4,
     );
   }
