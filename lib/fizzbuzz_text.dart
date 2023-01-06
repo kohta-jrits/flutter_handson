@@ -7,18 +7,10 @@ class FizzBuzzText extends StatelessWidget {
   final _fizzbuzz = Fizzbuzz();
   FizzBuzzText({super.key, required this.number});
 
-  // @override
-  // Widget build(BuildContext context) {
-  //   return Text(
-  //     _fizzbuzz.convert(number),
-  //     style: Theme.of(context).textTheme.headline4,
-  //   );
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Text(
-      result,
+      _fizzbuzz.convert(number),
       style: Theme.of(context).textTheme.headline4,
     );
   }
